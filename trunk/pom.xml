@@ -81,6 +81,56 @@
 
     <inceptionYear>2011</inceptionYear>
 
+    <profiles>
+        <profile>
+            <id>snapshot-deploy</id>
+            <activation>
+                <property>
+                    <name>snapshotdeploy</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -154,7 +204,7 @@
                     <version>2.1</version>
                     <configuration>
                         <mavenExecutorId>forked-path</mavenExecutorId>
-                        <tagBase>https://proteus-framework.googlecode.com/svn/tags</tagBase>
+                        <tagBase>https://nfc-tag-event.googlecode.com/svn/tags</tagBase>
                     </configuration>
                 </plugin>
 
