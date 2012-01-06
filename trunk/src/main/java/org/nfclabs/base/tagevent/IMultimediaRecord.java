@@ -1,6 +1,8 @@
 package org.nfclabs.base.tagevent;
 
-public interface IMultimediaRecord extends IBitemporalObject, IVirtualObject {
+import org.nfclabs.base.IUniqueObject;
+
+public interface IMultimediaRecord extends IBitemporalObject, IVirtualObject, IUniqueObject {
  
 	public abstract INfcTagEvent getNfcTagEvent();
 }

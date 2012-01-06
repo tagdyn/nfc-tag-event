@@ -1,7 +1,7 @@
 package org.nfclabs.base;
 
-import java.util.List;
 import java.util.Set;
+import java.util.List;
 
 public interface IMetadataCollection {
  
