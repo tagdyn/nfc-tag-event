@@ -21,6 +21,8 @@ import org.nfclabs.base.tagevent.INfcTagEvent;
 
 public class MultimediaRecord implements IMultimediaRecord
 {
+    protected String namespace;
+    protected long uniqueId;
     protected INfcTagEvent tagEvent;
     protected long deviceTimestamp;
     protected long serverTimestamp;
@@ -55,5 +57,17 @@ public class MultimediaRecord implements IMultimediaRecord
     public String getMimeType()
     {
         return mimeType;
+    }
+
+    @Override
+    public long getUniqueID()
+    {
+        return uniqueId;
+    }
+
+    @Override
+    public String getNamespace()
+    {
+        return namespace;
     }
 }

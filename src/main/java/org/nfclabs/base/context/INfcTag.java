@@ -1,7 +1,7 @@
 package org.nfclabs.base.context;
 
-import org.nfclabs.base.tagevent.IGeoLocation;
 import org.nfclabs.base.types.INfcTagPhysicalType;
+import org.nfclabs.base.tagevent.IGeoLocation;
 
 public interface INfcTag {
  
