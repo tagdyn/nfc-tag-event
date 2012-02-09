@@ -30,6 +30,7 @@ public interface INfcTagEvent extends IUniqueObject, IBitemporalObject {
 	public abstract INfcApplication getNfcApplication();
 	public abstract INfcTag getNfcTag();
 	public abstract IGeoLocation getGeoLocation();
+	public abstract boolean hasLocation();
 	public abstract INfcTagEventType getEventType();
 	public abstract String getEventData();
 }

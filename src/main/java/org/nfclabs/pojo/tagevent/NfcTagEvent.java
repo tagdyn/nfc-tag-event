@@ -103,4 +103,10 @@ public class NfcTagEvent implements INfcTagEvent
     {
         return namespace;
     }
+
+    @Override
+    public boolean hasLocation()
+    {
+        return (geoLocation != null);
+    }
 }
