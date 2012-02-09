@@ -43,4 +43,10 @@ public class NfcTag implements INfcTag
     {
         return geoLocation;
     }
+
+    @Override
+    public boolean hasLocation()
+    {
+        return (geoLocation != null);
+    }
 }
