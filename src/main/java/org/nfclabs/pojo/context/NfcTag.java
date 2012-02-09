@@ -39,7 +39,7 @@ public class NfcTag implements INfcTag
     }
 
     @Override
-    public IGeoLocation getGeolocation()
+    public IGeoLocation getGeoLocation()
     {
         return geoLocation;
     }

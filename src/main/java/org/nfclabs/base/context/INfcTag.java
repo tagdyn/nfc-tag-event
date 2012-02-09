@@ -23,6 +23,6 @@ public interface INfcTag {
  
 	public abstract String getSerialNumber();
 	public abstract INfcTagPhysicalType getTagPhysicalType();
-	public abstract IGeoLocation getGeolocation();
+	public abstract IGeoLocation getGeoLocation();
 }
  
