@@ -27,7 +27,7 @@
     <groupId>org.nfclabs</groupId>
     <artifactId>tagevent-model</artifactId>
     <packaging>jar</packaging>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
 
     <name>NFC Tag Event</name>
 
@@ -72,9 +72,9 @@
     </developers>
 
     <scm>
-        <connection>scm:svn:https://nfc-tag-event.googlecode.com/svn/tags/tagevent-model-1.1</connection>
-        <developerConnection>scm:svn:https://nfc-tag-event.googlecode.com/svn/tags/tagevent-model-1.1</developerConnection>
-        <url>https://nfc-tag-event.googlecode.com/svn/tags/tagevent-model-1.1</url>
+        <connection>scm:svn:https://nfc-tag-event.googlecode.com/svn/trunk</connection>
+        <developerConnection>scm:svn:https://nfc-tag-event.googlecode.com/svn/trunk</developerConnection>
+        <url>https://nfc-tag-event.googlecode.com/svn/trunk</url>
     </scm>
 
     <inceptionYear>2011</inceptionYear>
