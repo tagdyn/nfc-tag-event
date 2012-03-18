@@ -22,7 +22,7 @@ public abstract class AbstractSimpleObject implements ISimpleObject
 {
     protected String name;
     protected String description;
-    protected boolean activeFlag;
+    protected boolean activeFlag = true;
 
     @Override
     public String getName()
