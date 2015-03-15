@@ -1,0 +1,1 @@
+Tag Dynamics, Inc. is collaborating with the NFC community to develop an open standard around the concept of an NFC Tag Event™. A _tag event_ represents the action of touching an NFC-enabled device to an NFC compliant RFID tag.
